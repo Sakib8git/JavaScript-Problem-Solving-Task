@@ -82,6 +82,7 @@ for (let i = num; i > 0; i--) {
 console.log(facValue);
 
 // ! Problem 10: PingPong Challenge
+// Array
 const numArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 15];
 const pingArray = [];
 for (let num of numArray4) {
@@ -97,3 +98,19 @@ for (let num of numArray4) {
   }
 }
 console.log(pingArray);
+
+// funtion
+function pingpong() {
+  for (let num = 1; num <= 20; num++) {
+    if (num % 3 === 0 && num % 5 === 0) {
+      console.log("pingpong");
+    } else if (num % 3 === 0) {
+      console.log("ping");
+    } else if (num % 5 === 0) {
+      console.log("pong");
+    } else {
+      console.log(num);
+    }
+  }
+}
+pingpong();
